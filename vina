@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vina's Profile</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+      background-size: 400% 400%;
+      animation: rainbowBG 12s ease infinite;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .profile {
+      margin-top: 50px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 150px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1, p, h3, ul {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ad1457;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .contact-btn:hover {
+      background-color: #880e4f;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animated {
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .bounce {
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 5px #fff; }
+      50% { box-shadow: 0 0 20px #ff69b4; }
+      100% { box-shadow: 0 0 5px #fff; }
+    }
+
+    .glow {
+      animation: glow 2s ease-in-out infinite;
+    }
+
+    @keyframes rainbowBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <h1 class="animated bounce">Hello, I'm Vina Sivan 👋</h1>
+    <img src="https://via.placeholder.com/150" alt="My Photo">
+    <p class="animated">I’m currently studying Foundation in IT and learning to build websites!</p>
+
+    <h3 class="animated">My Interests</h3>
+    <ul class="animated">
+      <li>Web Development</li>
+      <li>Graphic Design</li>
+      <li>Learning new tech!</li>
+    </ul>
+
+    <button onclick="window.location.href='mailto:vina@example.com'" class="contact-btn glow">
+      Email Me
+    </button>
+  </div>
+</body>
+</html>
+<br><br>
+<button onclick="window.location.href='about.html'" class="contact-btn glow">
+  About Me
+</button>
